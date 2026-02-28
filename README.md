@@ -1,4 +1,3 @@
-
 # 📈 Growth Analytics & A/B Testing
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)](https://python.org)
@@ -54,8 +53,7 @@ nobs = [len(variant), len(control)]
 
 stat, pval = proportions_ztest(count, nobs)
 print(f"\nP-Value: {pval}")
-
-
+```
 
 ---
 
@@ -121,28 +119,3 @@ This portfolio emphasizes:
 - Analytical rigor
 - Actionable insights
 - Scalable analytics workflows
-
-# **Author**
-**Olufemi Olamoyegun**  
-Senior Data Analyst | Power BI | SQL | Python | Microsoft Fabric  
-🔗 [LinkedIn](https://www.linkedin.com/in/olufemiolamoyegun/) | 📂 [GitHub](https://github.com/olufemiolamoyegun)  
-
----
-
-# **Portfolio Philosophy**
-Data should not just **produce reports**—it should **drive business strategy, guide decisions, and create measurable impact**. This portfolio emphasizes:  
-- Business problem framing  
-- Analytical rigor  
-- Actionable insights  
-- Scalable analytics workflows
-
-🔗 [LinkedIn](https://www.linkedin.com/in/olufemi-olamoyegun) | 📂 [GitHub](https://github.com/olufemiolamoyegun)
-
-
-
-
-
-
-
-
-
