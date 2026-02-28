@@ -7,14 +7,11 @@
 
 ---
 
-## 📌 Project Overview
+## ## 📌 Project Overview
 # 🌱 Growth Analytics Portfolio
 
 **Technologies:** Python (Pandas, Statsmodels, NumPy), SQL, Power BI, Excel  
 
----
-
-## **Portfolio Overview**
 This portfolio demonstrates my ability to translate **complex business problems** into **data-driven insights**. Projects simulate real-world scenarios in **SaaS, e-commerce, fintech, and Big Tech**, emphasizing **A/B testing, growth analytics, product experimentation, and KPI frameworks**.
 
 ---
@@ -24,6 +21,12 @@ This portfolio demonstrates my ability to translate **complex business problems*
 **Business Problem:**  
 Product teams need to validate whether new features increase **conversion rates** and **revenue per user**. Poor decision-making without evidence can result in lost revenue and misaligned product strategies.
 
+**Solution:**  
+Performed **A/B testing analysis** using Python to measure conversion lift, revenue impact, and statistical significance. Built **data pipelines** and optional dashboards for decision-making.
+
+**Step-by-Step Analysis (Python)**
+
+```python
 # Load libraries
 import pandas as pd
 from statsmodels.stats.proportion import proportions_ztest
@@ -36,90 +39,13 @@ df.head()
 df.info()
 print("Conversion rates by group:\n", df.groupby("group")["converted"].mean())
 
-**Solution:**  
-Performed **A/B testing analysis** using Python to measure conversion lift, revenue impact, and statistical significance. Built **data pipelines** and optional dashboards for decision-making.
-
-**Key Insights:**  
-- Variant significantly **increased conversion rate**  
-- Average **revenue per user improved**  
-- Results statistically significant (**p < 0.05**)  
-
-**Tools Used:**  
-Python, Pandas, Statsmodels, SQL, Power BI (Optional)  
-
-**Business Impact:**  
-- Rollout of Variant recommended to maximize growth  
-- Supports **data-driven decision-making**  
-- Establishes repeatable **framework for future experiments**
-
-**Project Link:**  
-[Growth Analytics & A/B Testing](https://github.com/olufemiolamoyegun/Growth-Analytics-A-B-Testing)
-
----
-
-# **2. Product Experimentation & Feature Impact Analysis**
-
-**Business Problem:**  
-Companies often launch features without knowing their **impact on user engagement** and **revenue contribution**.
-
 # 2️⃣ Conversion Rate Analysis
 conversion = df.groupby("group")["converted"].mean() * 100
 print(f"\nConversion Rates (%):\n{conversion}")
 
-**Solution:**  
-- Conducted **exploratory data analysis** (EDA) on user engagement metrics  
-- Built KPIs to measure feature adoption and retention  
-- Applied **Python and SQL** for data transformation and analysis  
-
-**Key Insights:**  
-- Features with high engagement correlate strongly with **daily active users**  
-- Certain features drive **long-term retention**, while others show **short-term spikes**  
-
-**Tools Used:**  
-Python, Pandas, SQL, Power BI  
-
-**Business Impact:**  
-- Informed product prioritization based on **data-driven insights**  
-- Guided marketing and development teams in **feature rollout**  
-
-**Project Link:**  
-[Product Experimentation Analytics](https://github.com/olufemiolamoyegun/Product-Experimentation-Analytics)
-
----
-
-# **3. Revenue & Conversion Funnel Analytics**
-
-**Business Problem:**  
-Understanding **where users drop off** in the conversion funnel is critical to increase revenue in e-commerce and SaaS platforms.
-
 # 3️⃣ Revenue Analysis
 revenue = df.groupby("group")["revenue"].mean()
 print(f"\nAverage Revenue per User:\n{revenue}")
-
-**Solution:**  
-- Analyzed funnel stages using **Python, Pandas, and Power BI**  
-- Identified bottlenecks and drop-off points for targeted interventions  
-
-**Key Insights:**  
-- Highest drop-offs occur at **checkout and signup stages**  
-- Optimizing user onboarding could increase **overall conversions by 12-15%**  
-
-**Tools Used:**  
-Python, Pandas, Power BI, SQL  
-
-**Business Impact:**  
-- Recommended **funnel optimizations** to reduce churn  
-- Supported product and marketing teams in **conversion optimization strategies**  
-
-**Project Link:**  
-[Revenue & Conversion Funnel Analytics](https://github.com/olufemiolamoyegun/Revenue-Conversion-Funnel-Analytics)
-
----
-
-# **4. KPI & Dashboard Automation for Growth Analytics**
-
-**Business Problem:**  
-Manual reporting slows decision-making and increases **risk of errors** in measuring growth KPIs.
 
 # 4️⃣ Statistical Significance Test
 control = df[df["group"]=="Control"]["converted"]
@@ -130,21 +56,6 @@ nobs = [len(variant), len(control)]
 
 stat, pval = proportions_ztest(count, nobs)
 print(f"\nP-Value: {pval}")
-
-**Solution:**  
-- Built **automated dashboards** in Power BI to track **conversion, revenue, and retention KPIs**  
-- Implemented **ETL pipelines** for data aggregation and transformation  
-
-**Key Insights:**  
-- Automated dashboards reduce reporting time by **40%**  
-- Provides real-time insights to executives and product teams  
-
-**Tools Used:**  
-Power BI, SQL, Python  
-
-**Business Impact:**  
-- Improved **reporting efficiency** and **decision-making speed**  
-- Enabled teams to monitor **growth KPIs interactively**  
 
 **Project Link:**  
 [KPI & Dashboard Automation](https://github.com/olufemiolamoyegun/KPI-Dashboard-Automation)
