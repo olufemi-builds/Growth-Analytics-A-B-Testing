@@ -108,7 +108,7 @@ This portfolio showcases my ability to:
 ## Author
 **Olufemi Olamoyegun**  
 Senior Data Analyst | Power BI | SQL | Python | Microsoft Fabric  
-🔗 [LinkedIn](https://www.linkedin.com/in/olufemiolamoyegun/) | 📂 [GitHub](https://github.com/olufemiolamoyegun)
+🔗 [LinkedIn](https://www.linkedin.com/in/olufemi-olamoyegun/) | 📂 [GitHub](https://github.com/olufemiolamoyegun)
 
 ---
 
