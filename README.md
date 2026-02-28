@@ -24,6 +24,18 @@ This portfolio demonstrates my ability to translate **complex business problems*
 **Business Problem:**  
 Product teams need to validate whether new features increase **conversion rates** and **revenue per user**. Poor decision-making without evidence can result in lost revenue and misaligned product strategies.
 
+# Load libraries
+import pandas as pd
+from statsmodels.stats.proportion import proportions_ztest
+
+# Load dataset
+df = pd.read_csv("AB_Test.csv")
+df.head()
+
+# 1️⃣ Sanity Checks
+df.info()
+print("Conversion rates by group:\n", df.groupby("group")["converted"].mean())
+
 **Solution:**  
 Performed **A/B testing analysis** using Python to measure conversion lift, revenue impact, and statistical significance. Built **data pipelines** and optional dashboards for decision-making.
 
@@ -49,6 +61,10 @@ Python, Pandas, Statsmodels, SQL, Power BI (Optional)
 
 **Business Problem:**  
 Companies often launch features without knowing their **impact on user engagement** and **revenue contribution**.
+
+# 2️⃣ Conversion Rate Analysis
+conversion = df.groupby("group")["converted"].mean() * 100
+print(f"\nConversion Rates (%):\n{conversion}")
 
 **Solution:**  
 - Conducted **exploratory data analysis** (EDA) on user engagement metrics  
@@ -76,6 +92,10 @@ Python, Pandas, SQL, Power BI
 **Business Problem:**  
 Understanding **where users drop off** in the conversion funnel is critical to increase revenue in e-commerce and SaaS platforms.
 
+# 3️⃣ Revenue Analysis
+revenue = df.groupby("group")["revenue"].mean()
+print(f"\nAverage Revenue per User:\n{revenue}")
+
 **Solution:**  
 - Analyzed funnel stages using **Python, Pandas, and Power BI**  
 - Identified bottlenecks and drop-off points for targeted interventions  
@@ -100,6 +120,16 @@ Python, Pandas, Power BI, SQL
 
 **Business Problem:**  
 Manual reporting slows decision-making and increases **risk of errors** in measuring growth KPIs.
+
+# 4️⃣ Statistical Significance Test
+control = df[df["group"]=="Control"]["converted"]
+variant = df[df["group"]=="Variant"]["converted"]
+
+count = [variant.sum(), control.sum()]
+nobs = [len(variant), len(control)]
+
+stat, pval = proportions_ztest(count, nobs)
+print(f"\nP-Value: {pval}")
 
 **Solution:**  
 - Built **automated dashboards** in Power BI to track **conversion, revenue, and retention KPIs**  
