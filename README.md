@@ -1,68 +1,112 @@
-# 📈 Experimentation & Revenue Optimization Analytics  
-**Business-Driven A/B Testing Framework (Python | Pandas | Statsmodels)**
+# Experimentation & Revenue Optimization Analytics  
+Business-Driven A/B Testing Framework (Python | Pandas | Statsmodels)
 
 ---
 
-## 🔎 Business Problem  
-A SaaS company noticed new product features were not consistently driving revenue growth, and teams lacked **data-backed evidence** to decide which changes to roll out.  
+## Business Problem
 
-**Key Questions:**  
-- Does the variant improve user conversion?  
-- Does it increase revenue per user?  
-- Can the business confidently roll it out using data?
+A SaaS company faced inconsistent revenue growth from new feature releases.
+
+Teams lacked clear evidence to decide:
+
+- Which product variant improves conversion  
+- Whether changes increase revenue per user  
+- If results are strong enough to support rollout decisions  
+
+The core problem is uncertainty in product decision-making.
 
 ---
 
-## 🎯 Solution  
-Implemented a **Python-based A/B testing framework** to evaluate product variants with statistical rigor:  
+## Solution
 
-- Conversion rate comparison (Control vs Variant)  
+A Python-based A/B testing framework was built to evaluate product variants using statistical methods.
+
+The analysis includes:
+
+- Conversion rate comparison between Control and Variant  
 - Revenue per user impact analysis  
-- Two-proportion Z-test for statistical significance  
+- Statistical significance testing using a two-proportion Z-test  
 
-**Goal:** Quantify which variant delivers measurable business impact and provide actionable rollout recommendations.
-
----
-
-## 📊 Analytical Approach  
-1. Validate dataset and ensure balanced groups.  
-2. Compare conversion rates between Control and Variant.  
-3. Analyze revenue per user impact.  
-4. Test statistical significance using Z-test.  
-5. Translate results into actionable business recommendations.
+The goal is to determine whether product changes create measurable business value.
 
 ---
 
-## 📈 Key Findings & Insights  
+## Analytical Approach
+
+1. Validate dataset and balance between groups  
+2. Compare conversion rates (Control vs Variant)  
+3. Measure revenue per user impact  
+4. Test statistical significance (Z-test)  
+5. Translate results into rollout decisions  
+
+---
+
+## Key Findings
+
 | Metric | Control | Variant | Lift | Insight |
 |--------|--------|--------|------|--------|
-| Conversion Rate | 12.5% | 15.8% | +3.3 pp | Variant improved conversion |
-| Avg Revenue/User | $22.5 | $26.1 | +$3.6 | Variant increased revenue per user |
-| P-Value | – | – | <0.05 | Statistically significant |
-
-**Business Interpretation:**  
-The Variant demonstrates measurable conversion and revenue uplift, providing strong justification for a full rollout.
+| Conversion Rate | 12.5% | 15.8% | +3.3 pp | Variant improves conversion performance |
+| Avg Revenue per User | $22.5 | $26.1 | +$3.6 | Variant increases revenue generation |
+| P-Value | – | – | <0.05 | Result is statistically significant |
 
 ---
 
-## 💼 Business Impact  
-- Reduces risk of implementing underperforming features  
-- Enables product and growth teams to make data-backed decisions  
-- Improves revenue predictability and ROI on experiments  
-- Promotes a culture of continuous optimization and experimentation  
+## Interpretation
+
+The Variant shows:
+
+- Higher conversion rate compared to Control  
+- Higher revenue per user  
+- Statistically significant improvement  
+
+This indicates the observed uplift is unlikely due to random variation.
 
 ---
 
-## 📊 Optional Executive Dashboard (Power BI)  
-**Audience:** Product Managers, Growth Leads  
-**KPIs:** Conversion Rate, Revenue per User, Lift %  
-**Visuals:** Side-by-side comparison of Control vs Variant for decision-making
+## Business Impact
+
+- Reduces risk in product decision-making  
+- Supports data-driven feature rollout decisions  
+- Improves revenue optimization across product experiments  
+- Strengthens experimentation culture within product teams  
 
 ---
 
-## **Author**
-**Olufemi Olamoyegun**  
-Data Analyst | Power BI | SQL | Workforce & Business Analytics  
-🔗 [LinkedIn](https://www.linkedin.com/in/olufemi-olamoyegun/) | 📂 [GitHub](https://github.com/olufemiolamoyegun)  
+## Optional Dashboard (Power BI)
+
+Audience: Product Managers, Growth Teams
+
+Includes:
+
+- Conversion rate comparison (Control vs Variant)  
+- Revenue per user comparison  
+- Lift visualization across metrics  
+- Statistical outcome summary  
 
 ---
+
+## Tools Used
+
+- Python (Pandas, Statsmodels)  
+- Statistical testing (Z-test)  
+- Data analysis and experimentation framework  
+
+---
+
+## Project Outcome
+
+This project demonstrates how structured experimentation can guide product decisions using statistical evidence rather than assumptions.
+
+It enables:
+
+- Reliable A/B testing workflows  
+- Revenue impact measurement  
+- Conversion optimization  
+- Evidence-based feature rollout decisions  
+
+---
+
+## Author
+
+Data Analyst  
+Python | SQL | Power BI | Experimentation & Product Analytics
